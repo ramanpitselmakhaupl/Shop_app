@@ -16,6 +16,7 @@ public class klient
 
     public void delFromBox(produkt k)
     {
-        toPayment -= k.getPrise();
+        if(this.toPayment < k.getPrise()) this.toPayment = 0.0;
+        else toPayment -= k.getPrise();
     }
 }

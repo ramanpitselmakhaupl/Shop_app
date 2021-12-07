@@ -4,7 +4,11 @@ public class produkt
 {
     private String name;
     private Double prise;
-    private boolean inBox;
+    private boolean inBox = false;
+
+    public void setInBox(boolean isInBox) {
+        this.inBox = isInBox;
+    }
 
     double getPrise()
     {
