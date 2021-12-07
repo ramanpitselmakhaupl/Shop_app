@@ -10,6 +10,11 @@ public class produkt
         this.inBox = isInBox;
     }
 
+    boolean getInBox()
+    {
+        return inBox;
+    }
+
     double getPrise()
     {
         return prise;

@@ -12,6 +12,7 @@ public class klient
     public void addToBox(produkt k)
     {
         toPayment += k.getPrise();
+        k.setInBox(true);
     }
 
     public void delFromBox(produkt k)
